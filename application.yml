@@ -1,10 +1,10 @@
----   #分割线 8000定义为prod 8005端口定义dev
+﻿---   #分割线 8000定义为prod 8005端口定义dev
 server:
   port: 8000
   servlet:
     context-path: /
 spring:
-  prfiles: prod   #定义为生产环境
+  profiles: prod   #定义为生产环境
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
@@ -35,7 +35,7 @@ server:
   servlet:
     context-path: /
 spring:
-  prfiles: dev   #定义为研发环境
+  profiles: dev   #定义为研发环境
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
